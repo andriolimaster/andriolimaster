@@ -1,0 +1,51 @@
+@charset "UTF-8";
+table {
+    font-family: sans-serif;   
+}
+body {
+    margin: 0;
+}
+#desc-produto {
+    color: white;
+}
+h1 {
+    position: relative; top: -5px; left: -8px;
+    line-height: 135px;
+    width: 101.2%;
+    background-origin: padding-box;
+    background-color: rgb(4, 66, 15);
+    border-top: 0;
+    border
+    font-family: sans-serif;
+    color: antiquewhite;
+    text-align: center;   
+}
+h2 {
+    font-family: inherit;
+    color: rgb(12, 107, 41);
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(5, 83, 24)
+}
+#voltar {
+    text-align: center;
+    color: white;
+    position: relative; 
+}
+#imgevolucao {
+	margin-left: 10px;
+	left: 15px; /* posiciona a 90px para a esquerda */ 
+	top: 25px; /* posiciona a 70px para baixo */
+
+}
+footer {
+        background-color: rgb(3, 73, 8);
+        margin: 0;
+        line-height: 22px;
+        width: 99.90%;
+        font-family: sans-serif;
+        color: antiquewhite;
+        text-align: center;
+        padding: 25px 1px 120px;  
+    }
