@@ -7,114 +7,144 @@
     <title>Produtos</title>
     <!--link rel="stylesheet" href="style.css"-->
     <style>
-        #body {
-            margin: 0
-        }
-        #imagem-fundo {
-            background: url(imagens/cidade-tecnologia.jpg);
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            height: 1190px;
-            width: 1350px;
-            position: fixed;
-        }
-        #bloco-titulo {
-            text-align: color white;
-        }
-        #bloco1 {
-            background: linear-gradient(rgb(49, 46, 19), rgb(177, 122, 22)) rgb(226, 225, 221);
-            border: 0.5px solid white;
-            text-align: left; margin-top: -50px;
-            font-size: 20px; font-family: sans-serif;
-            color: rgb(225, 235, 225);
-            height: 280px;
-            width: 80%;
-            background-size: cover; 
-            margin-bottom: 100px;
-            margin-left: 10%;
-            margin-top: 10px;
-            position: relative; top: 50px; left: 1px;
-        }
-        #bloco2 {
-            background-image: url(imagens/cidade-digital.jpg);
-            background-color: rgb(219, 192, 124);
-            border: 1px solid white;
+        .text {
+	    width: 100%;
+	    height: 100vh;
+	    background: url(imagens/evolucao.png);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    font-weight: bold;
+	    font-family: serif;
+        color: darkgreen;
+	    /*-webkit-text-fill-color: transparent;*/
+	    -webkit-background-clip: text;
+	    display: flex;
+	    justify-content: center;
+	    align-items:  center;
+        flex-direction: column;
+	    text-align: justify;
+	    max-width: 100%;
+	}
+	    span{
+		text-shadow: 0 0 20px rgba(126, 24, 24, 0.2);
+        font-size: 3em;
+	}
+        .p{
+        -webkit-text-fill-color: #09330c;
+        font-family: 'Helvetica', 'Source Sans', sans-serif;
+    }
+	    body {
+	    background: url(imagens/cidade-tecnologia.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    max-width: 100wh;
+	    padding: 0;
+	    margin: 0;
+
+    }
+        .outer-text{
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.1);
+        font-size: 1em;
+    }
+         h1 {
+            margin-top: 2%;
+            background-color: burlywood;
+            height: 40px;
+            max-width: 100%;
             text-align: center;
-            font-size: 20px; font-family: sans-serif; color: rgb(14, 70, 14);
-            height: 280px;
-            width: 80%;
-            background-size: cover; 
-            margin-bottom: 100px;
-            margin-left: 10%;
-            position: relative; top: 50px; left: 1px;
+        }
+        h3 {
+            background-color: aquamarine;
+            height: 30px;
+            width: 640px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .primeiromenu {
+            margin-top: -16px;
+            background-color: aquamarine;
+            height: 150px;
+            width: 600px;
+            text-align: left;
+            font-size: 14px; color: brown; font-family: sans-serif;
+        }
+        .segundomenu {
+            margin: 0;
+            background-color: aquamarine;
+            height: 180px;
+            width: 600px;
+            text-align: left;
+            font-size: 14px; color: brown; font-family: sans-serif;
+            float: right;
+            margin-right: center;
+            margin-top: -195px;
 
         }
-        #bloco3 {
-            background-image: url(imagens/circulo-de-tecnologia-verde-e-computador_10307-639.jpg);
-            background-color: rgb(219, 192, 124);
-            border: 1px solid white;
-            text-align: center;
-            font-size: 20px; font-family: sans-serif; color: rgb(14, 70, 14);
-            height: 280px;
-            width: 80%;
-            background-size: cover; 
-            margin-bottom: 100px;
-            margin-left: 10%;
-            position: relative; top: 55px; left: 1px;
-
-        }
-        #p {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color:rgb(5, 83, 24)
-        }
-        #voltar {
-            text-align: center;
-            color: white;
-            position: relative; 
+         img {
+            margin: 0;
+            height: 480px;
+            width: 1340px;
+            background-attachment: scroll;        
         }
         footer {
-        background-color: rgb(3, 73, 8);
-        margin-bottom: -1%;
-        line-height: 22px;
-        width: 100%;
-        font-family: sans-serif;
-        color: antiquewhite;
-        text-align: center;
-        padding: 25px 2px 100px;  
-    }
+            height: 100%;
+            width: 100%;
+            background-color: darkgreen;
+            text-align: center;
+            font-family: sans-serif, 12px;
+            color: white;   
+        }
+        .voltar {
+            text-align: center;
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body>
-    <div id="imagem-fundo"></div>
-    <div id="bloco-titulo">
-        <p style="color: white
-        " alt="Softwares">Softwares para Gestão Pública</p></div>
-    <div id="bloco1"><b><br> </b>
-        <ul>
-            <li>
-                <p>
-                    SCPI - Software de Contabilidade Pública Integrado
-                </p>
+    <div class="outer-text">
+		<div class="text">
+			<span>BRASIL SISTEMAS</span>
+      <p>Estamos aqui pra ajudar</p>
+		</div>
+	</div>
+    <!--<img src="imagens/cidade-tecnologia.jpg">-->
+    <h1>Nossos produtos e Serviços</h1>
+    <h3>Conheça nossos softwares</h3>
+        <ul class="primeiromenu">
+            <li>SCPI - Software de Contabilidade Pública Integrado
             </li>
-            <li>
-                <p>
-                    SIP - Sistema Integrado de Pessoal
-                </p>
+            <li>SIP - Software Integrado de Pessoal</li>
+            <li>SIA - Software Integrado de Arrecadação</li>
+            <li>Zero Papel - Software de Processo Eletrônico
             </li>
-            <li>
-                <p>
-                    SIA - Sistema Integrado de Arrecadação
-                </p>
-            </li>
+            <li>Software de Compras e Licitações</li>
+            <li>Software de Estoque</li>
+            <li>Software de Patrimônio</li>
+            <li>Software de Controle de Frotas</li>
+            <li>Módulo de Administração de Contratos</li>
         </ul>
-    </div>
-    <div id="bloco2">Serviços</div>
-    <div id="bloco3">Suporte</div>
-    <div id="voltar"><a href="index.html">Voltar à página Inicial</a>
-
-    <footer style="text-align: center; font-family: sans-serif;"><b>BRASIL SISTEMAS EIRELI</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<BR>Av. dos Imigrantes nº 5888 - Aponiã - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br><a href="mailto:brasilsistemasro@gmail.com; edson.andrioli@brasilsistemasro.com">Enviar e-mail para contato<br></a>&copy; Desenvolvido por Brasil Sistemas</footer>
-    </div>
+        <ul class="segundomenu">
+            <ul style="text-align: center; color: black ;"
+            ><b>Nossos Serviços</b></ul>
+            <li>Serviços de Suporte Especializado na área
+            </li>
+            <li>Acompanhamento da aplicação dos recursos | Fonte de recursos</li>
+            <li>Suporte no fechamento mensal e anual de contas</li>
+            <li>Auxílio na geração e fechamento de SIOPS</li>
+            <li>Auxílio na geração e fechamento de SIOPE</li>
+            <li>Consolidação de contas mensal e anual</li>
+            <li>Comprometimento com a Administração Pública</li>
+            <li>Feedback dos recursos aplicados pela administração</li>
+            <li>Know how na área</li>
+            <li>Disponibilidade de atendimento</li>
+        </ul>
+        <div class="voltar">
+        <p><a href="index.html" alt="Voltar">Voltar à página Inicial</a></p></div>
+    <!--<img src="imagens/contas.jpg">-->
+    <footer style="font-family: sans-serif"><b>BRASIL SISTEMAS EIRELI</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<br>Av. dos Imigrantes nº 5888 - Aponiã - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br>
+    <a href="mailto:brasilsistemasro@gmail.com; edson.andrioli@brasilsistemasro.com">Enviar e-mail para contato<br></a>&copy; Desenvolvido por Brasil Sistemas
+    </footer>
 </body>
 </html>
