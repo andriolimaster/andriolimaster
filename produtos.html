@@ -9,8 +9,7 @@
     <style>
         .text {
 	    width: 100%;
-	    height: 100vh;
-	    background: url(imagens/evolucao.png);
+	    height: 60vh;
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	    font-weight: bold;
@@ -27,9 +26,9 @@
 	}
 	    span{
 		text-shadow: 0 0 20px rgba(126, 24, 24, 0.2);
-        font-size: 3em;
+        font-size: 2em;
 	}
-        .p{
+        .p {
         -webkit-text-fill-color: #09330c;
         font-family: 'Helvetica', 'Source Sans', sans-serif;
     }
@@ -45,14 +44,15 @@
         .outer-text{
 	    width: 100%;
 	    height: 100%;
-	    background: rgba(0, 0, 0, 0.1);
-        font-size: 1em;
+	    background: rgba(180, 173, 173, 0.1);
+        font-size: 1.3em;
+        
     }
          h1 {
             margin-top: 2%;
             background-color: burlywood;
-            height: 40px;
-            max-width: 100%;
+            height: 40px; /* altura */
+            max-width: 100%; /* largura */
             text-align: center;
         }
         h3 {
@@ -65,65 +65,80 @@
         .primeiromenu {
             margin-top: -16px;
             background-color: aquamarine;
-            height: 150px;
+            height: 200px;
             width: 600px;
             text-align: left;
-            font-size: 14px; color: brown; font-family: sans-serif;
+            font-size: 14px; color: darkgoldenrod; font-family: sans-serif;
+            color: darkgoldenrod;
+            line-height: 20px;
         }
         .segundomenu {
             margin: 0;
             background-color: aquamarine;
-            height: 180px;
+            height: 231px;
             width: 600px;
             text-align: left;
             font-size: 14px; color: brown; font-family: sans-serif;
             float: right;
             margin-right: center;
-            margin-top: -195px;
+            margin-top: -245px;
+            line-height: 20px;
 
         }
          img {
             margin: 0;
             height: 480px;
-            width: 1340px;
+            width: 100%;
             background-attachment: scroll;        
         }
         footer {
             height: 100%;
             width: 100%;
             background-color: darkgreen;
+            padding-bottom: 50px;
             text-align: center;
-            font-family: sans-serif, 12px;
-            color: white;   
+            font-family: sans-serif, 10px ;
+            color: rgb(230, 219, 219);  
+            letter-spacing: 1px;
+            line-height: 25px;
         }
-        .voltar {
+        a {
+            color: darkgoldenrod;
+            text-decoration: none;
+            text-align: center;
+
+        }
+        .voltar{
             text-align: center;
             font-family: sans-serif;
+            line-height: 18px;
+
         }
+
     </style>
 </head>
 <body>
     <div class="outer-text">
 		<div class="text">
-			<span>BRASIL SISTEMAS</span>
-      <p>Estamos aqui pra ajudar</p>
+			<span><a href="index.html" alt="Brasil">BRASIL SISTEMAS</a></span>
+        <p>Estamos aqui para lhe atender</p>
 		</div>
 	</div>
     <!--<img src="imagens/cidade-tecnologia.jpg">-->
     <h1>Nossos produtos e Serviços</h1>
     <h3>Conheça nossos softwares</h3>
         <ul class="primeiromenu">
-            <li>SCPI - Software de Contabilidade Pública Integrado
+            <li><a href="scpi.html" target="_self" alt="SCPI"><b>SCPI</b>- Software de Contabilidade Pública Integrado</a>
             </li>
-            <li>SIP - Software Integrado de Pessoal</li>
-            <li>SIA - Software Integrado de Arrecadação</li>
-            <li>Zero Papel - Software de Processo Eletrônico
+            <li><a href="https://fiorilli.com.br/?service=sip-sistema-integrado-de-pessoal" target="_blank" alt="SIP"><b>SIP</b> - Software Integrado de Pessoal</a></li>
+            <li><a href="https://fiorilli.com.br/service/sia-sistema-integrado-de-arrecadacao/" target="_blank" alt="SIA"><b>SIA</b>- Software Integrado de Arrecadação</a></li>
+            <li><b>Zero Papel</b> - Software de Processo Eletrônico
             </li>
-            <li>Software de Compras e Licitações</li>
-            <li>Software de Estoque</li>
-            <li>Software de Patrimônio</li>
-            <li>Software de Controle de Frotas</li>
-            <li>Módulo de Administração de Contratos</li>
+            <li><a href="https://fiorilli.com.br/service/scpi-sistema-de-contabilidade-publica-integrado/" alt="SCPICompras"><b>SCPI Licitações</b> - Software de Compras e Licitações</a></li>
+            <li><a href="https://fiorilli.com.br/service/scpi-sistema-de-contabilidade-publica-integrado/" alt="SCPIEstoque"><b>SCPI Estoque</b> - Software de Estoque</a></li>
+            <li><a href="https://fiorilli.com.br/service/scpi-sistema-de-contabilidade-publica-integrado/" alt="SCPICompras"><b>SCPI Patrimônio</SCPI></b> - Software de Patrimônio</a></li>
+            <li><a href="https://fiorilli.com.br/service/scpi-sistema-de-contabilidade-publica-integrado/" alt="SCPICompras"><b>SCPI Frotas</b> - Software de Controle de Frotas</a></li>
+            <li><a href="https://fiorilli.com.br/service/scpi-sistema-de-contabilidade-publica-integrado/" alt="SCPICompras"><b>SCPI Contratos</b> - Módulo de Administração de Contratos</a></li>
         </ul>
         <ul class="segundomenu">
             <ul style="text-align: center; color: black ;"
@@ -141,9 +156,10 @@
             <li>Disponibilidade de atendimento</li>
         </ul>
         <div class="voltar">
-        <p><a href="index.html" alt="Voltar">Voltar à página Inicial</a></p></div>
+        <p><a href="index.html" alt="Voltar"style="color: white">Voltar à página Inicial</a></p>
+        </div>
     <!--<img src="imagens/contas.jpg">-->
-    <footer style="font-family: sans-serif"><b>BRASIL SISTEMAS EIRELI</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<br>Av. dos Imigrantes nº 5888 - Aponiã - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br>
+    <footer style="font-family: sans-serif"><b>BRASIL SISTEMAS LTDA</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<br>Av. dos Imigrantes nº 5888 - Aponiã - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br>
     <a href="mailto:brasilsistemasro@gmail.com; edson.andrioli@brasilsistemasro.com">Enviar e-mail para contato<br></a>&copy; Desenvolvido por Brasil Sistemas
     </footer>
 </body>
