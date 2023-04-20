@@ -7,85 +7,333 @@
     <title>Produtos</title>
     <!--link rel="stylesheet" href="style.css"-->
     <style>
-        .text {
-	    width: 100%;
-	    height: 60vh;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    font-weight: bold;
-	    font-family: serif;
-        color: darkgreen;
-	    /*-webkit-text-fill-color: transparent;*/
-	    -webkit-background-clip: text;
-	    display: flex;
-	    justify-content: center;
-	    align-items:  center;
-        flex-direction: column;
-	    text-align: justify;
-	    max-width: 100%;
-	}
-	    span{
-		text-shadow: 0 0 20px rgba(126, 24, 24, 0.2);
-        font-size: 2em;
-	}
-        .p {
-        -webkit-text-fill-color: #09330c;
-        font-family: 'Helvetica', 'Source Sans', sans-serif;
-    }
+        * {
+        margin: 0;
+        }
+        div.cabecalho{
+            margin: 20px;
+            background-image: url(imagens/evolucao.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
 	    body {
 	    background: url(imagens/cidade-tecnologia.jpg);
+        opacity: 0.8;
 	    background-repeat: no-repeat;
 	    background-size: cover;
-	    max-width: 100wh;
+        max-width: 100wh;
 	    padding: 0;
 	    margin: 0;
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            font-size: 38px;
+            margin-left: 125px;
+        }
+        p{
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            margin-left: 125px;
+        }
+        div.container {
+        height: 100%;
+        background: -webkit-linear-gradient(top, #088fad 20%);
+        }
+        div.titulo{
+        font-size: 1.8vw;
+        background-color: blue;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 2vw;
+        position: relative;
+        margin-top: 4px;
 
-    }
-        .outer-text{
-	    width: 100%;
-	    height: 100%;
-	    background: rgba(180, 173, 173, 0.1);
-        font-size: 1.3em;
-        
-    }
-         h1 {
-            margin-top: 2%;
+        }
+        div.scpi-cont{
+        margin-left: 40px;
+        margin-top: 25px;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        }
+        div.sip-folha{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-left: 10px;
+        }
+        div.sia-tributo{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-left: 10px ;
+        }
+        div.scpi-compras{
+        margin-left: 40px;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        }
+        div.scpi-estoque{
+        max-width: 100%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;
+        }
+        div.scpi-patri{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;
+        }
+        div.scpi-frota{
+        margin-left: 40px;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        }
+        div.scpi-contrato{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;
+        }
+        div.zero-papel{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;
+        }
+        div.sas{
+        margin-left: 40px;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;  
+        }
+        div.sis{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;    
+        }
+        div.sed{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;   
+        }
+
+        /* Início do container 2 */
+
+        div.container2 {
+        height: 100%;
+        background: -webkit-linear-gradient(top, #088fad 20%);
+        }
+        div.servico{
+        font-size: 2vw;
+        background-color: blue;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 3vw;
+        position: relative;
+        margin-top: 4px;
+        }
+        div.sup-especial{
+        margin-left: 40px;
+        margin-top: 25px;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;  
+        }
+        div.acomp-aplica{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-left: 10px;   
+        }
+        div.suport-fecha{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-left: 10px ;    
+        }
+        div.aux-siops{
+        margin-left: 40px;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;    
+        }
+        div.aux-siope{
+        max-width: 100%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;    
+        }
+        div.consolida{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;    
+        }
+        div.compro-adm-pub{
+        margin-left: 40px;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;    
+        }
+        div.retorno-adm{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 1.3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px;
+        margin-left: 10px;
+        }
+        div.know-how{
+        width: 30%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-left: 10px;  
+        }
+        div.disponivel{
+        margin-left: 34.5%;
+        display: inline-block;
+        background-color: rgb(26, 109, 19);
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+        padding: 3vw 0vw 3vw 0vw;
+        min-width: 30vw;
+        margin-top: 25px; 
+        }
+        h2{ 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 100px;
             background-color: burlywood;
             height: 40px; /* altura */
             max-width: 100%; /* largura */
             text-align: center;
+            color: black;
+            font-size: 2.2vw;
+            padding: 2vw;
+            position: relative;
         }
-        h3 {
-            background-color: aquamarine;
-            height: 30px;
-            width: 640px;
-            font-size: 16px;
-            text-align: center;
-        }
-        .primeiromenu {
-            margin-top: -16px;
-            background-color: aquamarine;
-            height: 200px;
-            width: 600px;
-            text-align: left;
-            font-size: 14px; color: darkgoldenrod; font-family: sans-serif;
-            color: darkgoldenrod;
-            line-height: 20px;
-        }
-        .segundomenu {
-            margin: 0;
-            background-color: aquamarine;
-            height: 231px;
-            width: 600px;
-            text-align: left;
-            font-size: 14px; color: brown; font-family: sans-serif;
-            float: right;
-            margin-right: center;
-            margin-top: -245px;
-            line-height: 20px;
-
-        }
-         img {
+        img {
             margin: 0;
             height: 480px;
             width: 100%;
@@ -95,72 +343,68 @@
             height: 100%;
             width: 100%;
             background-color: darkgreen;
-            padding-bottom: 50px;
+            padding-bottom: 40px;
             text-align: center;
             font-family: sans-serif, 10px ;
             color: rgb(230, 219, 219);  
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             line-height: 25px;
         }
         a {
-            color: darkgoldenrod;
+            color: white;
             text-decoration: none;
             text-align: center;
-
+            line-height: 25px;
         }
         .voltar{
             text-align: center;
             font-family: sans-serif;
-            line-height: 18px;
-
+            display: list-item;
+            margin-left: -130px;
         }
-
     </style>
 </head>
+<header>
+    <div class="cabecalho">
+    <h1>Brasil Sistemas</h1>
+    <p>Soluções na área pública para um ambiente mais seguro</p>
+</div></header>
 <body>
-    <div class="outer-text">
-		<div class="text">
-			<span><a href="index.html" alt="Brasil">BRASIL SISTEMAS</a></span>
-        <p>Estamos aqui para lhe atender</p>
-		</div>
 	</div>
     <!--<img src="imagens/cidade-tecnologia.jpg">-->
-    <h1>Nossos produtos e Serviços</h1>
-    <h3>Conheça nossos softwares</h3>
-        <ul class="primeiromenu">
-            <li><a href="scpi.html" target="_self" alt="SCPI"><b>SCPI</b>- Software de Contabilidade Pública Integrado</a>
-            </li>
-            <li><a href="sip.html" target="_self" alt="SIP"><b>SIP</b> - Software Integrado de Pessoal</a></li>
-            <li><a href="sia.html" target="_self" alt="SIA"><b>SIA</b>- Software Integrado de Arrecadação</a></li>
-            <li><b>Zero Papel</b> - Software de Processo Eletrônico
-            </li>
-            <li><a href="scpi.html" target="_self" alt="SCPICompras"><b>SCPI Licitações</b> - Software de Compras e Licitações - Integrado ao Sistema Contábil</a></li>
-            <li><a href="scpi.html" target="_self" alt="SCPIEstoque"><b>SCPI Estoque</b> - Software de Estoque - Integrado ao Sistema Contábil</a></li>
-            <li><a href="scpi.html" target="_self" alt="SCPICompras"><b>SCPI Patrimônio</SCPI></b> - Software de Patrimônio - Integrado ao Sistema Contábil</a></li>
-            <li><a href="scpi.html" target="_self" alt="SCPICompras"><b>SCPI Frotas</b> - Software de Controle de Frotas - Integrado ao Sistema Contábil</a></li>
-            <li><a href="scpi.html" target="_self" alt="SCPICompras"><b>SCPI Contratos</b> - Módulo de Administração de Contratos - Integrado ao Sistema Contábil</a></li>
-        </ul>
-        <ul class="segundomenu">
-            <ul style="text-align: center; color: black ;"
-            ><b>Nossos Serviços</b></ul>
-            <li>Serviços de Suporte Especializado na área
-            </li>
-            <li>Acompanhamento da aplicação dos recursos | Fonte de recursos</li>
-            <li>Suporte no fechamento mensal e anual de contas</li>
-            <li>Auxílio na geração e fechamento de SIOPS</li>
-            <li>Auxílio na geração e fechamento de SIOPE</li>
-            <li>Consolidação de contas mensal e anual</li>
-            <li>Comprometimento com a Administração Pública</li>
-            <li>Feedback dos recursos aplicados pela administração</li>
-            <li>Know how na área</li>
-            <li>Disponibilidade de atendimento</li>
-        </ul>
+    <h2>TECNOLOGIA SOB MEDIDA PARA SUA GESTÃO</h2>
+    <div class="container">
+        <div class="titulo">SISTEMAS INTEGRADOS</div>
+        <div class="scpi-cont"><a href="scpi.html" target="_self" alt="SCPI">SCPI - CONTABILIDADE</a></div>
+        <div class="sip-folha"><a href="sip.html" target="_self" alt="SIP">SIP - FOLHA</a></div>
+        <div class="sia-tributo"><a href="sia.html" target="_self" alt="SIA">SIA - TRIBUTOS</a></div>
+        <div class="scpi-compras"><a href="scpi.html" target="_self" alt="SCPI">SCPI - COMPRAS E LICITAÇÕES</a></div>
+        <div class="scpi-estoque"><a href="scpi.html" target="_self" alt="SCPI">SCPI - ESTOQUE</a></div>
+        <div class="scpi-patri"><a href="scpi.html" target="_self" alt="SCPI">SCPI - PATRIMÔNIO</a></div>
+        <div class="scpi-frota"><a href="scpi.html" target="_self" alt="SCPI">SCPI - FROTAS</a></div>
+        <div class="scpi-contrato"><a href="scpi.html" target="_self" alt="SCPI">SCPI - CONTRATOS</a></div>
+        <div class="zero-papel">ZERO Papel</div>
+        <div class="sas">SAS - AÇÃO SOCIAL</div>
+        <div class="sis">SIS - MODERNIZAÇÃO DA SAÚDE</div>
+        <div class="sed">SED - DIGITALIZAÇÃO DE DOCS</div>
+    <div class="container2">
+        <div class="servico">NOSSOS SERVIÇOS</div>   
+        <div class="sup-especial">Serviços de Suporte Especializado na área</div>    
+        <div class="acomp-aplica">Acompanhamento da aplicação dos recursos</div>    
+        <div class="suport-fecha">Suporte no fechamento mensal e anual de contas</div>    
+        <div class="aux-siops">Auxílio na geração e fechamento de SIOPS</div>    
+        <div class="aux-siope">Auxílio na geração e fechamento de SIOPE</div>    
+        <div class="consolida">Consolidação de contas mensal e anual</div>
+        <div class="compro-adm-pub">Comprometimento com a Administração Pública</div>
+        <div class="retorno-adm">Feedback dos recursos aplicados pela administração</div>
+        <div class="know-how">Know how na área</div>
+        <div class="disponivel">Disponibilidade de atendimento</div> 
         <div class="voltar">
         <p><a href="index.html" alt="Voltar"style="color: white">Voltar à página Inicial</a></p>
         </div>
     <!--<img src="imagens/contas.jpg">-->
-    <footer style="font-family: sans-serif"><b>BRASIL SISTEMAS LTDA</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<br>Av. dos Imigrantes nº 5888 - Aponiã - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br>
-    <a href="mailto:brasilsistemasro@gmail.com; edson.andrioli@brasilsistemasro.com">Enviar e-mail para contato<br></a>&copy; Desenvolvido por Brasil Sistemas
+    <footer style="font-family: sans-serif"><b><br>BRASIL SISTEMAS LTDA</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<br>Av. dos Imigrantes nº 5888 - Aponiã - Sala A - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br>
+    <a href="mailto:brasilsistemasro@gmail.com; edson.andrioli@brasilsistemasro.com">Enviar e-mail para contato<br></a>Copyright &copy; 2023 brasilsistemasro.com</br>&reg; Todos os direitos reservados</br>Desenvolvido por Brasil Sistemas</br>Versão 1.0
     </footer>
 </body>
 </html>
