@@ -4,404 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-    <!--link rel="stylesheet" href="style.css"-->
-    <style>
-        * {
-        margin: 0;
-        }
-        div.cabecalho{
-            margin: 20px;
-            background-image: url(imagens/evolucao.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-
-        }
-	    body {
-	    background: url(imagens/cidade-tecnologia.jpg);
-        opacity: 0.8;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-        max-width: 100wh;
-	    padding: 0;
-	    margin: 0;
-        }
-        h1{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: white;
-            font-size: 38px;
-            margin-left: 125px;
-        }
-        p{
-            color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 20px;
-            margin-left: 125px;
-        }
-        div.container {
-        height: 100%;
-        background: -webkit-linear-gradient(top, #088fad 20%);
-        }
-        div.titulo{
-        font-size: 1.8vw;
-        background-color: blue;
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        padding: 2vw;
-        position: relative;
-        margin-top: 4px;
-
-        }
-        div.scpi-cont{
-        margin-left: 40px;
-        margin-top: 25px;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        }
-        div.sip-folha{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-left: 10px;
-        }
-        div.sia-tributo{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-left: 10px ;
-        }
-        div.scpi-compras{
-        margin-left: 40px;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        }
-        div.scpi-estoque{
-        max-width: 100%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;
-        }
-        div.scpi-patri{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;
-        }
-        div.scpi-frota{
-        margin-left: 40px;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        }
-        div.scpi-contrato{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;
-        }
-        div.zero-papel{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;
-        }
-        div.sas{
-        margin-left: 40px;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;  
-        }
-        div.sis{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;    
-        }
-        div.sed{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;   
-        }
-
-        /* Início do container 2 */
-
-        div.container2 {
-        height: 100%;
-        background: -webkit-linear-gradient(top, #088fad 20%);
-        }
-        div.servico{
-        font-size: 2vw;
-        background-color: blue;
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        padding: 3vw;
-        position: relative;
-        margin-top: 4px;
-        }
-        div.sup-especial{
-        margin-left: 40px;
-        margin-top: 25px;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;  
-        }
-        div.acomp-aplica{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-left: 10px;   
-        }
-        div.suport-fecha{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-left: 10px ;    
-        }
-        div.aux-siops{
-        margin-left: 40px;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;    
-        }
-        div.aux-siope{
-        max-width: 100%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;    
-        }
-        div.consolida{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;    
-        }
-        div.compro-adm-pub{
-        margin-left: 40px;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;    
-        }
-        div.retorno-adm{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 1.3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px;
-        margin-left: 10px;
-        }
-        div.know-how{
-        width: 30%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-left: 10px;  
-        }
-        div.disponivel{
-        margin-left: 34.5%;
-        display: inline-block;
-        background-color: rgb(26, 109, 19);
-        font-size: 1.5vw;
-        text-align: center;
-        color: white;
-        padding: 3vw 0vw 3vw 0vw;
-        min-width: 30vw;
-        margin-top: 25px; 
-        }
-        h2{ 
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            margin-top: 100px;
-            background-color: burlywood;
-            height: 40px; /* altura */
-            max-width: 100%; /* largura */
-            text-align: center;
-            color: black;
-            font-size: 2.2vw;
-            padding: 2vw;
-            position: relative;
-        }
-        img {
-            margin: 0;
-            height: 480px;
-            width: 100%;
-            background-attachment: scroll;        
-        }
-        footer {
-            background-color: darkgreen;
-            padding-bottom: 40px;
-            text-align: center;
-            font-family: sans-serif, 10px ;
-            color: rgb(230, 219, 219);  
-            letter-spacing: 2px;
-            line-height: 25px;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            line-height: 25px;
-        }
-        .voltar{
-            text-align: center;
-            font-family: sans-serif;
-            display: list-item;
-            margin-left: -130px;
-        }
-    </style>
+    <title>Brasil Sistemas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<header>
-    <div class="cabecalho">
-    <h1>Brasil Sistemas</h1>
-    <p>Soluções na área pública para um ambiente mais seguro</p>
-</div></header>
-<body>
-    <!--<img src="imagens/cidade-tecnologia.jpg">-->
-    <h2>TECNOLOGIA SOB MEDIDA PARA SUA GESTÃO</h2>
-    <div class="container">
-        <div class="titulo">SISTEMAS INTEGRADOS</div>
-        <div class="scpi-cont"><a href="scpi.html" target="_self" alt="SCPI">SCPI - CONTABILIDADE</a></div>
-        <div class="sip-folha"><a href="sip.html" target="_self" alt="SIP">SIP - FOLHA</a></div>
-        <div class="sia-tributo"><a href="sia.html" target="_self" alt="SIA">SIA - TRIBUTOS</a></div>
-        <div class="scpi-compras"><a href="scpi.html" target="_self" alt="SCPI">SCPI - COMPRAS E LICITAÇÕES</a></div>
-        <div class="scpi-estoque"><a href="scpi.html" target="_self" alt="SCPI">SCPI - ESTOQUE</a></div>
-        <div class="scpi-patri"><a href="scpi.html" target="_self" alt="SCPI">SCPI - PATRIMÔNIO</a></div>
-        <div class="scpi-frota"><a href="scpi.html" target="_self" alt="SCPI">SCPI - FROTAS</a></div>
-        <div class="scpi-contrato"><a href="scpi.html" target="_self" alt="SCPI">SCPI - CONTRATOS</a></div>
-        <div class="zero-papel">ZERO Papel</div>
-        <div class="sas">SAS - AÇÃO SOCIAL</div>
-        <div class="sis">SIS - MODERNIZAÇÃO DA SAÚDE</div>
-        <div class="sed">SED - DIGITALIZAÇÃO DE DOCS</div>
-    <div class="container2">
-        <div class="servico">NOSSOS SERVIÇOS</div>   
-        <div class="sup-especial">Serviços de Suporte Especializado na área</div>    
-        <div class="acomp-aplica">Acompanhamento da aplicação dos recursos</div>    
-        <div class="suport-fecha">Suporte no fechamento mensal e anual de contas</div>    
-        <div class="aux-siops">Auxílio na geração e fechamento de SIOPS</div>    
-        <div class="aux-siope">Auxílio na geração e fechamento de SIOPE</div>    
-        <div class="consolida">Consolidação de contas mensal e anual</div>
-        <div class="compro-adm-pub">Comprometimento com a Administração Pública</div>
-        <div class="retorno-adm">Feedback dos recursos aplicados pela administração</div>
-        <div class="know-how">Know how na área</div>
-        <div class="disponivel">Disponibilidade de atendimento</div> 
-        <div class="voltar">
-        <p><a href="index.html" alt="Voltar"style="color: white">Voltar à página Inicial</a></p>
-        </div>
-    <!--<img src="imagens/contas.jpg">-->
-    <footer style="font-family: sans-serif"><b><br>BRASIL SISTEMAS LTDA</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<br>Av. dos Imigrantes nº 5888 - Aponiã - Sala A - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br>
-    <a href="mailto:brasilsistemasro@gmail.com; edson.andrioli@brasilsistemasro.com">Enviar e-mail para contato<br></a>Copyright &copy; 2023 brasilsistemasro.com</br>&reg; Todos os direitos reservados</br>Desenvolvido por Brasil Sistemas</br>Versão 1.0
-    </footer>
+<body onresize="mudouTamanho()">
+    <header>
+        <img src="imagens/evolucao.png" alt="evolucao">
+        <h1>Brasil Sistemas</h1>
+        <h3>Soluções Integradas para um ambiente mais seguro</h3>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Cidade Inteligente</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    <main>
+    <article>
+        <h2>NOSSOS PRODUTOS</h2>
+		<h2>SCPI - Orçamento e Execução Orçamentária</h2>
+        <p>A evolução de três usuários iniciais em 1997 para mais de dois mil cento e trinta em 2018, indiscutivelmente, é o maior certificado de qualidade e do custo/benefício deste sistema desenvolvido pela Fiorilli Software. Da finalidade inicial de atendimento às normas legais, orçamento, contabilidade e balanços, o sistema transformou-se, também, em um útil e prático instrumento de gestão da Administração Pública Municipal.</p>
+		<p>Atendemos o Sistema <b>SIAFIC</b>, conforme:</p>
+		<p><b>DECRETO Nº 10.540, DE 5 DE NOVEMBRO DE 2020</b>
+
+ 	
+			que dispõe sobre o padrão mínimo de qualidade do Sistema Único e Integrado de Execução Orçamentária, Administração Financeira e Controle.
+			
+			</p>
+		<h4 style="text-align: center;"><a href="scpi.html">Saiba mais</a></h4>
+
+		<h2>SIP - Gestão RH</h2>
+        <p>O Sistema Integrado de Pessoal-SIP é multi-empresa, multitarefa e multiusuário com permissão por tela. Possui senha de acesso criptografada. Todos os relatórios do sistema podem ser alterados pelo usuário, além de serem armazenados mais de um layout para cada relatório criado pelo sistema da Fiorilli.</p>
+		<h4 style="text-align: center;"><a href="sip.html">Saiba mais</a></h4>
+
+		<h2>SIA - Tributos</h2>
+        <p>O Sistema Integrado de Arrecadação foi desenvolvido para garantir à Administração Municipal o controle de todo o processo de arrecadação de receitas municipais de forma detalhada e segura.
+		Trata-se de um sistema cujas funcionalidades podem ser adaptadas às regras de qualquer Código Tributário Municipal, a fim de calcular e controlar todos os tributos e preços públicos previstos em lei municipal. Projetado para controlar a arrecadação de maneira fácil, porém completa, o SIA permite aos usuários total controle sobre tabelas de cálculo, com ferramentas que possibilitam previsões de arrecadação com diferentes fatores, controles estatísticos, gráficos e relatórios existentes em todos os módulos que compõem esse sistema. Além disso, o SIA possui Controle de Usuários e de LOG avançados, por meio do qual o sistema armazena todas as operações feitas por todos os usuários.</p>
+		<h4 style="text-align: center;"><a href="sia.html">Saiba mais</a></h4>
+
+		<h2>SCPI - Compras e Licitações</h2>
+        <p>Inicia e conduz o usuário em todo o processo de compra, começando pelo registro das demandas dos departamentos, através das solicitações, que podem passar por um controle de autorizações, até a elaboração de cotações de preços e formalização do pedido de compra. Esse processo também envolve o procedimento licitatório, todas as fases da despesa e os registros de entradas e saídas do almoxarifado.</p>
+		<h4 style="text-align: center;"><a href="scpi.html">Saiba mais</a></h4>
+
+		<h2>SCPI - Estoque</h2>
+        <p>Através do registro de entrada e saída de materiais, permite um gerenciamento de Estoque efetivo, possibilitando esse registro através de uma ou mais unidades gestoras de estoque, e permitindo também a transferência de estoque entre essas unidades.</p>
+		<h4 style="text-align: center;"><a href="scpi.html">Saiba mais</a></h4>
+		
+		<h2>SCPI - Patrimônio</h2>
+        <p>Permite administrar a área de patrimônio acompanhando a movimentação física e financeira dos bens, bem como o controle de depreciação automática. Permitindo uma atualização automática dos valores dos bens no balanço patrimonial.</p>
+		<h4 style="text-align: center;"><a href="scpi.html">Saiba mais</a></h4>
+
+		<h2>SCPI - Frotas</h2>
+        <p>Gerenciando todos os veículos e máquinas, registra as diversas despesas com manutenção e abastecimento, além de auxiliar em outros controles como, monitoramento diário de portaria, agendamento de viagens, manutenção preventiva, multas, licenciamentos e controle de pneus.</p>
+		<h4 style="text-align: center;"><a href="scpi.html">Saiba mais</a></h4>
+
+		<h2>SCPI - Contratos</h2>
+        <p>O Sistema Integrado com o módulo contas e compras e licitações, permitindo ao usuário importar automaticamente os dados do fornecedor vencedor do processo licitatório ao cadastro de contratos da instituição. Dispõe de cadastro e o controle de aditivos de contratos, publicação e acréscimos e supressões que se fizerem necessários, de acordo com a necessidade de cada ente.</p>
+		<h4 style="text-align: center;"><a href="scpi.html">Saiba mais</a></h4>
+
+		<h2>SISWEB - Sistema de Saúde Municipal</h2>
+        <p><b>O SIS – Sistema Integrado de Saúde</b> tem por finalidade controlar todo o atendimento ambulatorial de unidades e postos de saúde. Atende todas as normas e exigências do SUS, de acordo com a NOB-96 e as portarias que regulamentaram a tabela de procedimentos e suas definições.</p>
+		<h4 style="text-align: center;"><a href="#">Saiba mais</a></h4>
+
+		<h2>SASWEB - Sistema de Assistência Social</h2>
+		<p>O <b>Sistema de Assistência Social-SAS</b> tem por finalidade gerenciar e simplificar os serviços oferecidos pela Assistência Social dos Municípios, combinando controle eficiente à simplicidade de sua organização. De fácil manuseio, possui telas autoexplicativas, cadastros simples e visualização completa. Tem como funcionalidades, coordenação de projetos e programas sociais, requerimento e concessão de benefícios, visitas domiciliares, atendimentos e possíveis encaminhamentos, contratos e subvenções entre outros, oferecendo um sistema de consulta simples e objetivo, tornando rápido e preciso a obtenção das informações e gerenciamento dos processos.</p><h4 style="text-align: center;"><a href="#">Saiba mais</a></h4>
+
+		<h2>Sistema Zero Papel</h2>
+		<p></p><h4 style="text-align: center;"><a href="#">Saiba mais</a></h4>
+
+		<h2>SGC - Sistema de Gestão de Custos</h2>
+		<p></p><h4 style="text-align: center;"><a href="#">Saiba mais</a></h4>
+		
+    </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+            itens.style.display = 'block'
+        }
+    }
+    </script>
+	<div class="container">
+		<footer class="footer-container">
+			<div class="footer-content-1">
+				<p class="footer-p">
+					<a href="index.html">Home</a>
+					<a href="sobre.html">Sobre nós</a>
+					<a href="produtos.html">Produtos</a>
+					<a href="servicos.html">Serviços</a>
+					<a href="#">Contato</a>
+				</p>
+				<img src="imagens/LOGOMARCAFORTE.jpg" alt="logo_inteligenciaArtificial">
+				<h3>Integração <span>Inteligente</span></h3>
+				<p class="footer-empresa">
+					Oferecemos soluções tecnológicas de alta performace.
+				</p>
+			</div>
+			<div class="footer-content-2">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><a href="http://https://goo.gl/maps/1Ahv9nrFPVuzXEcQ8">
+						Avenida dos Imigrantes 5888, Aponiã, Porto Velho - RO
+					</a></p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:suportewebonline@gmail.com">
+						brasilsistemasro@gmail.com
+					</a></p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p><a href="tel:6933014954">(69)33014954</a></p>
+					<p><a href="tel:6999385021">/ 993850821</a></p>
+				</div>
+				<div>
+					<i class="fa fa-whatsapp"></i>
+					<p><a href="https://api.whatsapp.com/send?phone=5511989892121&text=Gostaria-de-mais-informações-sobre-serviço" target="_blank">
+						+55 69-993850821
+					</a></p>
+				</div>
+			</div>
+			<div class="footer-content-3">
+				<p class="footer-empresa">
+					<span>Sobre a Empresa</span>
+					Uma empresa de tecnologia baseada em negócios relacionados à Soluções em Gestão Pública.
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+				<hr>
+				<p>©2023 Brasil Sistemas Ltda.</p>
+			</div>
+			<div class="copyright">
+				<hr>
+				<p>©Copyright. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
