@@ -109,7 +109,7 @@ article > p {
 }
 
 article > .container .container3 {
-    text-align: justify;
+    text-align: left;
 }
 article > .container .container3 .servico {
     color: #4581cf;
@@ -181,6 +181,7 @@ article > .container .container3 .know-how{
 article > .container .container3 .disponivel{
     color: darkcyan;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
     font-size: 14px;
     line-height: 35px;
 }
@@ -188,6 +189,7 @@ article > .container .container3 .disponivel{
 article > .container .container3 .diferencial {
     color: #4581cf;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
     text-decoration: underline;
     font-weight: bold;
     font-size: 17px;
@@ -198,6 +200,7 @@ article > .container .container3 .diferencial {
 article > .container .container3 .texto1{
     color: darkred;
     font-family: sans-serif;
+    text-align: justify;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 20px;
@@ -206,6 +209,7 @@ article > .container .container3 .texto1{
 article > .container .container3 .missao {
     color: #4581cf;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
     text-decoration: underline;
     font-weight: bold;
     font-size: 17px;
@@ -216,6 +220,7 @@ article > .container .container3 .missao {
 article > .container .container3 .texto2{
     color: darkred;
     font-family: sans-serif;
+    text-align: justify;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 20px;
@@ -224,6 +229,7 @@ article > .container .container3 .texto2{
 article > .container .container3 .visao {
     color: #4581cf;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
     text-decoration: underline;
     font-weight: bold;
     font-size: 17px;
@@ -234,6 +240,7 @@ article > .container .container3 .visao {
 article > .container .container3 .texto3{
     color: darkred;
     font-family: sans-serif;
+    text-align: justify;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 20px;
@@ -242,6 +249,7 @@ article > .container .container3 .texto3{
 article > .container .container3 .valores {
     color: #4581cf;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
     text-decoration: underline;
     font-weight: bold;
     font-size: 17px;
@@ -252,6 +260,7 @@ article > .container .container3 .valores {
 article > .container .container3 .texto4{
     color: darkred;
     font-family: sans-serif;
+    text-align: justify;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 20px;
