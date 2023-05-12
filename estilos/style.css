@@ -294,7 +294,7 @@ article > .container .container3 .texto4{
     /*  logo */
     .footer-container .footer-content-1 img{
     width: 19%;
-    border-radius: 15px;
+    border-radius: 50%;
     }
     .footer-container h3{
     color:  #fff;
