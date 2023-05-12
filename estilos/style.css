@@ -105,8 +105,167 @@ article > h2 {
 article > p {
     text-align: justify;
     margin-bottom: 20px;
-    text-indent: 20px;
+    text-indent: 18px;
 }
+
+article > .container .container3 {
+    text-align: justify;
+}
+article > .container .container3 .servico {
+    color: #4581cf;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 45px;
+
+}
+
+article > .container .container3 .sup-especial {
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .acomp-aplica{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .suport-fecha{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .aux-siops{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .aux-siope{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .compro-adm-pub{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .retorno-adm{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .know-how{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .disponivel{
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+article > .container .container3 .diferencial {
+    color: #4581cf;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+
+article > .container .container3 .texto1{
+    color: darkred;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+article > .container .container3 .missao {
+    color: #4581cf;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+
+article > .container .container3 .texto2{
+    color: darkred;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+article > .container .container3 .visao {
+    color: #4581cf;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+
+article > .container .container3 .texto3{
+    color: darkred;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+article > .container .container3 .valores {
+    color: #4581cf;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+
+article > .container .container3 .texto4{
+    color: darkred;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
 
 #tela {
     margin-left: 0px;
@@ -279,4 +438,5 @@ article > p {
      margin:0 auto 0;
      width: 70%;
     }
+
 }
