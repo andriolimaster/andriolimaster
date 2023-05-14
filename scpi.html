@@ -1,78 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCPI</title>
-    <style>
-        body{
-            background-color: rgb(175, 231, 226);
-            opacity: 0.9;
-	        background-repeat: no-repeat;
-	        background-size: cover;
-            max-width: 100wh;
-	        padding: 0;
-	        margin: 0;
-        }
-        p {
-            text-align: justify;
-            font-family: sans-serif;
-            max-width: 70%;
-            margin-left: 15%;
-            line-height: 28px;
-        }
-        h1 {
-            color: rgb(97, 73, 14);
-            font-family: sans-serif;
-            background-color: rgb(204, 192, 153);
-            text-align: center;
-        }
-        h2 {
-            color: darkgoldenrod;
-            font-family: sans-serif;
-            margin-left: 22%;
-
-        }
-        h3 {
-            color: darkgoldenrod;
-            text-align: center;
-        }
-        li{
-            color: darkgoldenrod;
-            font-family: sans-serif;
-            margin-left: 23%;
-            text-align: left;
-            line-height: 28px;
-        }
-        footer {
-            height: 100%;
-            width: 100%;
-            background-color: darkgreen;
-            padding-bottom: 50px;
-            text-align: center;
-            font-family: sans-serif, 10px ;
-            color: rgb(230, 219, 219);  
-            letter-spacing: 1px;
-            line-height: 25px;
-        }
-        .voltar{
-            text-align: left;
-            font-family: sans-serif;
-            line-height: 18px;
-            margin-left: 38%;
-        }
-        .voltar-scpi {
-            text-align: left;
-            font-family: sans-serif;
-            line-height: 18px;
-            margin-left: 36%;
-        }
-    </style>
-    <link rel="shortcut icon" href="imagens/evolucao.png" type="image/x-icon">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Brasil Sistemas</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="estilos/scpi.css">
+		<link rel="stylesheet" href="estilos/mediaquery.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body>
-    <h1>SCPI - Sistema de Contabilidade Pública Integrado</h1>
+<body onresize="mudouTamanho()">
+	<header>
+        <img src="imagens/evolucao.png" alt="evolucao">
+        <h1>Brasil Sistemas</h1>
+        <h3>Soluções Integradas para um ambiente mais seguro</h3>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Cidade Inteligente</a></li>
+            </ul>
+        </menu>
+    </header>
+	<main>
+	<article>
+    <h2>SCPI - Sistema de Contabilidade Pública Integrado</h2>
     <p>A evolução de três usuários iniciais em 1997 para mais de dois mil cento e trinta em 2018, indiscutivelmente, é o maior certificado de qualidade e do custo/benefício deste sistema desenvolvido pela Fiorilli Software. Da finalidade inicial de atendimento às normas legais, orçamento, contabilidade e balanços, o sistema transformou-se, também, em um útil e prático instrumento de gestão da Administração Pública Municipal.
     </p>
     <h3>INTEGRAÇÃO</h3>
@@ -171,9 +130,11 @@
         <p>
             Foi programado para servir de suporte ao processo de planejamento permanente do município, processar e produzir todos os demonstrativos exigidos pelas normas legais.
         </p>
+    <br>
         <p style="color:sienna; font-weight: bold;">
             Integrações com os sistemas externos
         </p>
+    </br>
         <ul>
         <li>
             SIOPE - Sistema de Informações sobre Orçamentos Públicos em Educação;
@@ -194,17 +155,19 @@
             SPED - Sistema Público de escrituração Digital (ECD e ECF).
         </li>
         </ul>
+        <br>
         <p style="color:sienna; font-weight: bold;">
             Integrações entre sistemas Fiorilli
         </p>
+        </br>
         <ul>
-            <li>
+            <li style="color: brown; text-decoration: underline;">
                 Sistema Integrado de Pessoal
             </li>
             <p>
                 Incorpora de forma automática os empenhos orçamentários e extra referente a folha de pagamento.
             </p>
-            <li>
+            <li style="color: brown; text-decoration: underline;">
                 Sistema Integrado de Arrecadação
             </li>
             <p>
@@ -214,9 +177,13 @@
                 Gera guia de arrecadação e baixa automática no sistema tributário, referente as receitas de retenções dos empenhos.
             </p>
         </ul>
+        <ul>
+        <br>
         <p style="color:sienna; font-weight: bold;">
             Você ainda pode contar com:
         </p>
+        </br>
+        </ul>
         <ul>
             <li>
                 Segurança total com controle de acesso e registro de LOG;
@@ -250,16 +217,85 @@
             </li>
         </ul>
     </ul>
-    <div class="voltar-scpi">
-        <p><a href="produtos.html" alt="Voltar" target="_self" style="color: darkgoldenrod">Voltar página anterior</a></p>
-        </div>
-    </div>
-    <div class="voltar">
-        <p><a href="index.html" alt="Voltar"style="color: darkgoldenrod">Página Inicial</a></p>
-        </div>
-    <hr size="1.5" width="90%" tex-align="left" color="darkgoldenrod">
-    <footer style="font-family: sans-serif; color: white;"><b>BRASIL SISTEMAS LTDA</b><br>Soluções Integradas para um ambiente mais seguro<br>CNPJ: 08.303.100/0001-07<br>Av. dos Imigrantes nº 5888 - Aponiã - Porto Velho - RO<br>Telefone (69) 3301-4954 / 99385-0821<br>
-        <a href="mailto:brasilsistemasro@gmail.com; edson.andrioli@brasilsistemasro.com">Enviar e-mail para contato<br></a>&copy; Desenvolvido por Brasil Sistemas    
-    </footer>
+	</article>
+	</main>
+	<script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+            itens.style.display = 'block'
+        }
+    }
+    </script>
+	<div class="container">
+		<footer class="footer-container">
+			<div class="footer-content-1">
+				<p class="footer-p">
+					<a href="index.html">Home</a>
+					<a href="sobre.html">Sobre nós</a>
+					<a href="produtos.html">Produtos</a>
+					<a href="servicos.html">Serviços</a>
+					<a href="#">Contato</a>
+				</p>
+				<img src="imagens/LOGOMARCAFORTE.jpg" alt="logo_inteligenciaArtificial">
+				<h3>Integração <span>Inteligente</span></h3>
+				<p class="footer-empresa">
+					Oferecemos soluções tecnológicas de alta performace.
+				</p>
+			</div>
+			<div class="footer-content-2">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><a href="http://https://goo.gl/maps/1Ahv9nrFPVuzXEcQ8">
+						Avenida dos Imigrantes 5888, Aponiã, Porto Velho - RO
+					</a></p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:suportewebonline@gmail.com">
+						brasilsistemasro@gmail.com
+					</a></p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p><a href="tel:6933014954">(69)33014954</a></p>
+					<p><a href="tel:6999385021">/ 993850821</a></p>
+				</div>
+				<div>
+					<i class="fa fa-whatsapp"></i>
+					<p><a href="https://api.whatsapp.com/send?phone=5511989892121&text=Gostaria-de-mais-informações-sobre-serviço" target="_blank">
+						+55 69-993850821
+					</a></p>
+				</div>
+			</div>
+			<div class="footer-content-3">
+				<p class="footer-empresa">
+					<span>Sobre a Empresa</span>
+					Uma empresa de tecnologia baseada em negócios relacionados à Soluções em Gestão Pública.
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+				<hr>
+				<p>©2023 Brasil Sistemas Ltda.</p>
+			</div>
+			<div class="copyright">
+				<hr>
+				<p>©Copyright. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

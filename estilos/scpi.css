@@ -5,12 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: black;
 }
 body, html {
     background-color: blanchedalmond;
     overflow-x: hidden;
-    background-image: url(../imagens/universo-digital.jpg);
+}
+
+li {
+list-style-type: none;
 }
 
 img {
@@ -23,22 +25,14 @@ img {
 h1 {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 44px;
+    font-size: 140%;
     margin-top: -90px;
     margin-left: 140px;
 }
 
-h2 {
-    font-size: 18px;
-    color: darkgreen;
-}
-
-h3 {
+header > h3 {
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
     margin-left: 150px;
-    margin-top: -8px;
 }
 
 header {
@@ -98,13 +92,23 @@ main {
     border-radius: 10px;
 }
 
-article > h1 {
-    color: #2c292f;
-    font-size: 26px;
-    padding-top: 16%;
-    line-height: 45px;
-    margin-left: 0px;
+article > h2 {
+    font-size: 18px;
+    color: darkgreen;
 }
+
+article > h3 {
+    font-size: 16px;
+    color: rgb(141, 104, 10);
+}
+
+article > ul > li {
+    line-height: 25px;
+    font-size: 16px;
+    color: rgb(141, 104, 10);
+    font-weight: bold;
+}
+
 article > p {
     text-align: justify;
     margin-bottom: 20px;
@@ -112,161 +116,13 @@ article > p {
     line-height: 25px;
 }
 
+article > ul {
+    line-height: 25px;
+}
+
 article > .container .container3 {
     text-align: left;
 }
-article > .container .container3 .servico {
-    color: #4581cf;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 17px;
-    letter-spacing: 1px;
-    line-height: 45px;
-
-}
-
-article > .container .container3 .sup-especial {
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .acomp-aplica{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .suport-fecha{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .aux-siops{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .aux-siope{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .compro-adm-pub{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .retorno-adm{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .know-how{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .disponivel{
-    color: darkcyan;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-article > .container .container3 .diferencial {
-    color: #4581cf;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 17px;
-    letter-spacing: 1px;
-    line-height: 45px;
-}
-
-article > .container .container3 .texto1{
-    color: darkred;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-
-article > .container .container3 .missao {
-    color: #4581cf;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    font-weight: bold;
-    font-size: 17px;
-    letter-spacing: 1px;
-    line-height: 45px;
-}
-
-article > .container .container3 .texto2{
-    color: darkred;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-
-article > .container .container3 .visao {
-    color: #4581cf;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    font-weight: bold;
-    font-size: 17px;
-    letter-spacing: 1px;
-    line-height: 45px;
-}
-
-article > .container .container3 .texto3{
-    color: darkred;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-
-article > .container .container3 .valores {
-    color: #4581cf;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    font-weight: bold;
-    font-size: 17px;
-    letter-spacing: 1px;
-    line-height: 45px;
-}
-
-article > .container .container3 .texto4{
-    color: darkred;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-
 
 #tela {
     margin-left: 0px;
