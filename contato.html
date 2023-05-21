@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/form.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome Completo</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+			<label>Telefone</label>
+			<input type="number" name="fone" placeholder="Digite seu telefone" autocomplete="off" required>
+			<label>Instituição/Empresa</label>
+			<input type="text" name="emp" placeholder="Digite seu local de trabalho" autocapitalize="words" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+			
+
+            <input type="hidden" name="accessKey" value="b16132de-6c75-4350-b5c9-ef0ec101a4ab">
+            <input type="hidden" name="redirectTo" value="sitebrasil/retorno.html">
+        </form>
+    </section>
+</body>
+</html>

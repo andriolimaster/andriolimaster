@@ -10,7 +10,9 @@
 body, html {
     background-color: blanchedalmond;
     overflow-x: hidden;
-    background-image: url(../imagens/universo-digital.jpg);
+    background-image: url(../imagens/cidade-tecnologia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 img {
@@ -23,8 +25,8 @@ img {
 h1 {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 44px;
-    margin-top: -90px;
+    font-size: 36px;
+    margin-top: -80px;
     margin-left: 140px;
 }
 
@@ -36,13 +38,14 @@ h2 {
 h3 {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 150px;
     margin-top: -8px;
 }
 
 header {
-    background-image: url(../imagens/cidade-tecnologia.jpg);
+    /* background-image: url(../imagens/cidade-tecnologia.jpg); */
+    background-color: #2f2c33e0;
     background-repeat: no-repeat;
     background-size: cover;
 }
