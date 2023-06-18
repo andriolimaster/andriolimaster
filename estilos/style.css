@@ -103,6 +103,8 @@ main {
 }
 
 article > h1 {
+    width: 100px;
+    height: 100px;
     color: #2c292f;
     font-size: 26px;
     padding-top: 20%;
