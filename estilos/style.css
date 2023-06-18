@@ -7,10 +7,10 @@
     font-family: 'Poppins', sans-serif;
     color: black;
 }
-body, html {
+body {
     background-color: blanchedalmond;
     overflow-x: hidden;
-    background-image: url(../imagens/cidade-tecnologia.jpg);
+    background-image: url(../imagens/6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
