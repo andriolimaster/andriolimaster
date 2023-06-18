@@ -109,6 +109,12 @@ article > h1 {
     line-height: 45px;
     margin-left: 0px;
 }
+article > img {
+    width: 100px;
+    height: 100px;
+    border-width: 2px;
+    display: inline-block
+}
 article > p {
     text-align: justify;
     margin-bottom: 20px;
