@@ -305,7 +305,8 @@ article > .container .container3 .texto4{
     /*  logo */
     .footer-container .footer-content-1 img{
     width: 19%;
-    border-radius: 50%;
+    border-radius: 51%;
+    display: inline-block;
     }
     .footer-container h3{
     color:  #fff;
